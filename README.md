@@ -15,6 +15,7 @@ Ensure your bluetooth services and bluez are enabled and started:
 > sudo service bluetooth status
 
 > sudo nano /lib/systemd/system/bluetooth.service 
+
 (add a -C after ExecStart=/usr/local/libexec/bluetooth/bluetoothd then save and exit)
 
 > pip install pybluez 
