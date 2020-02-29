@@ -4,12 +4,18 @@ This repository details the steps to open a RFID communication channel on an Ubu
 As I haven't found many complete tutorials that aid with the understanding of how to open communication channels for Bluetooth communication between a Linux PC with an Android app, I decided to summarise the set of steps/commands that would help get anyone up and running easily.
 
 To set up your Linux PC follow through these set of commands
-
+Install bluez:
 > sudo apt-get install bluetooth bluez
+
+Ensure your bluetooth services and bluez are enabled and started:
+> sudo systemctl enable bluetooth
+
+> sudo systemctl start bluetooth
 
 > sudo service bluetooth status
 
-> sudo nano /lib/systemd/system/bluetooth.service (and add a -C)
+> sudo nano /lib/systemd/system/bluetooth.service 
+(add a -C after ExecStart=/usr/local/libexec/bluetooth/bluetoothd then save and exit)
 
 > pip install pybluez 
 
