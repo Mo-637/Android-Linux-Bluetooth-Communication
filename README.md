@@ -6,7 +6,9 @@ As I haven't found many complete tutorials that aid with the understanding of ho
 To set up your Linux PC follow through these set of commands
 
 > sudo apt-get install bluetooth bluez
+
 > sudo service bluetooth status
+
 > sudo nano /lib/systemd/system/bluetooth.service (and add a -C)
 
 > pip install pybluez 
