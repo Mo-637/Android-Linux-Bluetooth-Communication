@@ -5,22 +5,23 @@ As I haven't found many complete tutorials that aid with the understanding of ho
 
 To set up your Linux PC follow through these set of commands
 
-sudo apt-get install bluetooth bluez
-sudo service bluetooth status
-sudo nano /lib/systemd/system/bluetooth.service (and add a -C)
+> sudo apt-get install bluetooth bluez
+> sudo service bluetooth status
+> sudo nano /lib/systemd/system/bluetooth.service (and add a -C)
 
-pip install pybluez 
+> pip install pybluez 
 
 Then make sure the Linux device's bluetooth adapter is on, pairable and discoverable using the following commands.
 In a terminal type:
-bluetooth_ctl
+> bluetooth_ctl
 Then:
-powered on
-pairable on
-discoverable
+> power on
+> pairable on
+> discoverable
+Then pair your Android device and Linux devices
 
-sudo chmod +x bluetooth_adv
-sudo ./bluetooth_adv
+> sudo chmod +x bluetooth_adv
+> sudo ./bluetooth_adv
 
 Now everything is set
 
