@@ -24,9 +24,11 @@ Then make sure the Linux device's bluetooth adapter is on, pairable and discover
 In a terminal type:
 > bluetooth_ctl
 Then:
-> power on
-> pairable on
-> discoverable
+'''
+power on
+pairable on
+discoverable
+'''
 Then pair your Android device and Linux devices
 
 > sudo chmod +x bluetooth_adv
@@ -35,4 +37,7 @@ Then pair your Android device and Linux devices
 Now everything is set
 
 To open up a communication channel and server run
-sudo python rfcomm_server.py # Must include sudo to provide admin privileges.
+
+'''
+sudo python rfcomm_server.py
+'''  >Must include sudo to provide admin privileges.
